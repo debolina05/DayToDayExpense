@@ -1,12 +1,8 @@
 const sequelize = require('../database/config');
 const {DataTypes} = require('sequelize');
 
-const Signup=sequelize.define('daytodayexpense',
+const Login=sequelize.define('daytodayexpense',
 {
-    name:{
-        type:DataTypes.STRING,
-        allowNull:false
-    },
     email:{
         type:DataTypes.STRING,
         allowNull:false
@@ -15,6 +11,6 @@ const Signup=sequelize.define('daytodayexpense',
         type:DataTypes.STRING,
         allowNull:false
     },
-},{tableName:'signup', timestamps:false});
+},{tableName:'login', timestamps:false});
 
-module.exports=Signup;
+module.exports=Login;

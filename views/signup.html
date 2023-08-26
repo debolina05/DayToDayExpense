@@ -58,6 +58,21 @@
             width: 90px;
             margin-top: 20px;
         }
+
+        .log{
+            margin-left: 660px;
+            margin-top: 20px;
+        }
+
+        .log h5{
+            font-family:'Times New Roman', Times, serif;
+            font-size: medium;
+        }
+
+        .log input{
+            margin-left: 20px;
+            margin-top: 15px;
+        }
     </style>
 </head>
 
@@ -69,10 +84,15 @@
             <input type="text" id="name" name="name" required>
             <label for="email">Email :</label>
             <input type="text" id="email" name="email" required>
-            <label for="name">Password :</label>
+            <label for="password">Password :</label>
             <input type="text" id="password" name="password" required>
             <input type="submit" value="Sign-up" id="submitbtn" class="btn btn-primary">
         </form>
+    </div>
+
+    <div class="log">
+        <h5>If already a user </h5>
+        <form action="/login" method="post"><input type="submit" value="Log-in" id="loginbtn" class="btn btn-primary"></form>
     </div>
 </body>
 
